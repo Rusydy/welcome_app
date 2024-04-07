@@ -26,14 +26,19 @@ class WelcomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.redAccent,
-        title: const Text('Welcome', style: TextStyle(color: Colors.white)),
-        centerTitle: true,
-      ),
-      body: Center(
-        child: Image.asset('images/welcome.png'),
-      ),
-    );
+        appBar: AppBar(
+          title: const Text(
+            "Welcome",
+            style: TextStyle(color: Colors.white),
+          ),
+          centerTitle: true,
+          backgroundColor: Colors.redAccent,
+        ),
+        body: Center(
+          child: Image.asset(
+              'images/welcome.png',
+              scale: 1.5,
+          ),
+        ));
   }
 }
