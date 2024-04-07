@@ -31,6 +31,9 @@ class WelcomePage extends StatelessWidget {
         title: const Text('Welcome', style: TextStyle(color: Colors.white)),
         centerTitle: true,
       ),
+      body: Center(
+        child: Image.asset('images/welcome.png'),
+      ),
     );
   }
 }
